@@ -50,4 +50,4 @@ This project is licensed under the [MIT License](LICENSE).
 - The developers and contributors of Flask, PostgreSQL, and other open-source libraries used in this project.
 - The community of developers and users who have provided support and feedback throughout the development process.
 
-Enjoy using EaseMyTrip for hassle-free flight and hotel bookings!
+Enjoy using EaseMyTrip for hassle-free trip bookings!
