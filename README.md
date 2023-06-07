@@ -29,7 +29,7 @@ To run the EaseMyTrip application locally, follow these steps:
 1. Clone the repository: `git clone https://github.com/AkshatGadhwal/EaseMyTrip.git`
 2. Install the required dependencies: `pip install -r requirements.txt`
 3. Set up the PostgreSQL database and update the database configurations in the `config.py` file.
-4. Start the server: `flask run`
+4. Start the server: `python run`
 5. Access the application in your web browser: `http://localhost:5044`
 
 ## ER Diagram
