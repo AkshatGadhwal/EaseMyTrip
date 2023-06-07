@@ -14,12 +14,6 @@ EaseMyTrip is a comprehensive web application built using Flask Framework and Po
 - Optimized Performance: Efficient database schema design, query optimization techniques, and indexing to ensure fast and reliable application performance.
 - Responsive Design: The application is designed to be responsive, providing an optimal viewing experience across different devices and screen sizes.
 
-## ER Diagram
-
-- This is ER-Diagram of the database, we have created for this application
-
-![ER Diagram](ER_Diagram.png)
-
 ## Technologies Used
 
 - Flask Framework: A powerful Python web framework used for building the application's backend.
@@ -38,6 +32,11 @@ To run the EaseMyTrip application locally, follow these steps:
 4. Start the server: `flask run`
 5. Access the application in your web browser: `http://localhost:5044`
 
+## ER Diagram
+
+- This is ER-Diagram of the database, we have created for this application
+
+![ER Diagram](ER_Diagram.png)
 ## Contributions
 
 Contributions to the EaseMyTrip project are welcome. If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
