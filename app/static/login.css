@@ -1,0 +1,83 @@
+
+  .container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 0 0 10px gray;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  dl {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  dt, dd {
+    margin: 0;
+    padding: 10px;
+  }
+  
+  dt {
+    font-weight: bold;
+  }
+  
+  input[type="text"], input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  body {
+    background-color: #4CAF50;
+
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+
+  .register {
+    text-align: center;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .register a {
+    font-weight: bold;
+    color: blue;
+  }
+  a {
+	color: white;
+	text-decoration: none;
+}
+
+/* Set the hover effect for the buttons */
+button:hover {
+	opacity: 0.8;
+}

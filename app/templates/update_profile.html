@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Profile Page</title>
+	<link rel="stylesheet" type="text/css" href="/static/update_profile.css">
+</head>
+<body>
+	{% include 'header.html' %}
+	<div class="container">
+		<h1>Edit Profile</h1>
+		{% include 'flash_messages.html' %}
+		{% if error %}
+			<p class=error><strong>Error:</strong> {{ error }}</p>
+		{% endif %}
+
+		<div>
+			<h2>Current Details:</h2>
+			<p><strong>User ID:</strong> <span id="user_id">{{user_data[0]}}</span></p>
+			<p><strong>Username:</strong> <span id="username">{{user_data[1]}} </span></p>
+			<p><strong>Email:</strong> <span id="email">{{user_data[2]}}</span></p>
+		</div>
+
+		<div>
+			<h2>New Details:</h2>
+			{% from "_formhelpers.html" import render_field %}
+			<form method=post>
+				<dl>
+					{{ render_field(form.username) }}
+					{{ render_field(form.email) }}
+					{{ render_field(form.password) }}
+					{{ render_field(form.confirm) }}
+				</dl>
+				<p><input type=submit value=Update></p>
+			</form>
+		</div>
+	</div>
+	{% include 'footer.html' %}
+</body>
+</html>

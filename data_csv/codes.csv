@@ -1,0 +1,447 @@
+airport_id,city,airport_code
+1,Aberdeen,ABR
+2,Abilene,ABI
+3,Akron,CAK
+4,Alamosa,ALS
+5,Albany,ABY
+6,Albany,ALB
+7,Albuquerque,ABQ
+8,Alexandria,AEX
+9,Allentown,ABE
+10,Alliance,AIA
+11,Alpena,APN
+12,Altoona,AOO
+13,Amarillo,AMA
+14,Anchorage,ANC
+15,Appleton,ATW
+16,Asheville,AVL
+17,Aspen,ASE
+18,Athens,AHN
+19,Atlanta,ATL
+20,Atlantic City,ACY
+21,Augusta,AGS
+22,Augusta,AUG
+23,Austin,AUS
+24,Bakersfield,BFL
+25,Baltimore,BWI
+26,Bangor,BGR
+27,Bar Harbor,BHB
+28,Barrow,BRW
+29,Baton Rouge,BTR
+30,Beaumont,BPT
+31,Beckley,BKW
+32,Bedford,BED
+33,Bellingham,BLI
+34,Bemidji,BJI
+35,Bethel,BET
+36,Bettles,BTT
+37,Billings,BIL
+38,Binghamton,BGM
+39,Birmingham,BHM
+40,Bismarck,BIS
+41,Bloomington,BMI
+42,Bloomington,BMG
+43,Bluefield,BLF
+44,Boise,BOI
+45,Boston,BOS
+46,Bozeman,BZN
+47,Brookings,BKX
+48,Brownsville,BRO
+49,Brunswick,BQK
+50,Buffalo,BUF
+51,Burbank,BUR
+52,Burlington,BRL
+53,Burlington,BBF
+54,Burlington,BTV
+55,Busan,PUS
+56,Butte,BTM
+57,Cape Girardeau,CGI
+58,Carlsbad,CLD
+59,Carlsbad,CNM
+60,Casper,CPR
+61,Cedar Rapids,CID
+62,Champaign,CMI
+63,Charleston,CHS
+64,Charleston,CRW
+65,Charlotte,CLT
+66,Charlottesville,CHO
+67,Chattanooga,CHA
+68,Cheyenne,CYS
+69,Chicago,CHI 
+70,Chicago,MDW
+71,Chicago,ORD
+72,Chico,CIC
+73,Cincinnati,CVG
+74,Clarksburg,CKB
+75,Cleveland,CLE
+76,Clovis,CVN
+77,Cody,COD
+78,College Station,CLL
+79,Colorado Springs,COS
+80,Columbia,COU
+81,Columbia,CAE
+82,Columbus,CSG
+83,Columbus,CLU
+84,Columbus,GTR
+85,Columbus,OLU
+86,Columbus,CMH
+87,Cordova,CDV
+88,Corpus Christi,CRP
+89,Dallas,DAL
+90,Dallas,DFW
+91,Dayton,DAY
+92,Daytona Beach,DAB
+93,Decatur,DEC
+94,Denver,DEN
+95,Des Moines,DSM
+96,Detroit,DTT 
+97,Detroit,DTW
+98,Devils Lake,DVL
+99,Dickinson,DIK
+100,Dillingham,DLG
+101,Dodge City,DDC
+102,Dothan,DHN
+103,Du Bois,DUJ
+104,Dubuque,DBQ
+105,Duluth,DLH
+106,Durango,DRO
+107,Dutch Harbor,DUT
+108,Eau Claire,EAU
+109,Eek,EEK
+110,El Centro,IPL
+111,El Dorado,ELD
+112,El Paso,ELP
+113,Elko,EKO
+114,Elmira,ELM
+115,Enid,WDG
+116,Erie,ERI
+117,Escanaba,ESC
+118,Eugene,EUG
+119,Eureka,ACV
+120,Evansville,EVV
+121,Fairbanks,FAI
+122,Fargo,FAR
+123,Farmington,FMN
+124,Fayetteville,XNA
+125,Fayetteville,FAY
+126,Flagstaff,FLG
+127,Flint,FNT
+128,Florence,FLO
+129,Fort Dodge,FOD
+130,Fort Lauderdale,FLL
+131,Fort Leonard Wood,TBN
+132,Fort Myers,RSW
+133,Fort Smith,FSM
+134,Fort Walton Beach,VPS
+135,Fort Wayne,FWA
+136,Fort Yukon,FYU
+137,Fresno,FAT
+138,Gainesville,GNV
+139,Garden City,GCK
+140,Gillette,GCC
+141,Glendive,GDV
+142,Grand Forks,GFK
+143,Grand Island,GRI
+144,Grand Junction,GJT
+145,Grand Rapids,GRR
+146,Great Bend,GBD
+147,Great Falls,GTF
+148,Green Bay,GRB
+149,Greenbrier,LWB
+150,Greensboro,GSO
+151,Greenville,GLH
+152,Greenville,PGV
+153,Greenville,GSP
+154,Gulfport,GPT
+155,Gunnison,GUC
+156,Hagerstown,HGR
+157,Hana Maui,HNM
+158,Hancock,CMX
+159,Harlingen,HRL
+160,Harrisburg,MDT
+161,Harrison,HRO
+162,Hartford,BDL
+163,Havre,HVR
+164,Hays,HYS
+165,Helena,HLN
+166,Hibbing,HIB
+167,Hilo,Big
+168,Hilton Head Island,HHH
+169,Hobbs,HOB
+170,Homer,HOM
+171,Honolulu,HNL
+172,Hoolehua,MKK
+173,Hot Springs,HOT
+174,Houston,EFD
+175,Houston,HOU
+176,Houston,IAH
+177,Huntington,HTS
+178,Huntsville,HSV
+179,Huron,HON
+180,Hyannis,HYA
+181,Idaho Falls,IDA
+182,Indianapolis,IND
+183,International Falls,INL
+184,Inyokern,IYK
+185,Iron Mountain,IMT
+186,Ironwood,IWD
+187,Islip,ISP
+188,Ithaca,ITH
+189,Jackson Hole,JAC
+190,Jackson,JAN
+191,Jackson,MKL
+192,Jacksonville,JAX
+193,Jacksonville,OAJ
+194,Jamestown,JMS
+195,Jamestown,JHW
+196,Johnstown,JST
+197,Jonesboro,JBR
+198,Joplin,JLN
+199,Juneau,JNU
+200,Kahului,OGG
+201,Kalamazoo,AZO
+202,Kalaupapa,LUP
+203,Kalispell,FCA
+204,Kamuela,KOA
+205,Kansas City,MCI
+206,Kapalua,JHM
+207,Kearney,EAR
+208,Kenai,ENA
+209,Ketchikan,KTN
+210,Key West,EYW
+211,Killeen,GRK
+212,King Salmon,AKN
+213,Kingman,IGM
+214,Kirksville,IRK
+215,Klamath Falls,LMT
+216,Knoxville,TYS
+217,Kodiak,ADQ
+218,La Crosse,LSE
+219,Lafayette,LFT
+220,Lake Charles,LCH
+221,Lake Havasu City,HII
+222,Lanai City,LNY
+223,Lancaster,LNS
+224,Lansing,LAN
+225,Laramie,LAR
+226,Laredo,LRD
+227,Las Cruces,LRU
+228,Las Vegas,LAS
+229,Latrobe,LBE
+230,Laurel,PIB
+231,Lawton,LAW
+232,Lebanon,LEB
+233,Lewiston,LWS
+234,Lewiston,LEW
+235,Lewistown,LWT
+236,Lexington,LEX
+237,Liberal,LBL
+238,Lihue Kauai,LIH
+239,Lincoln,LNK
+240,Little Rock,LIT
+241,Long Beach,LGB
+242,Longview,GGG
+243,Los Angeles,LAX
+244,Los Angeles,QLA-All
+245,Louisville,SDF
+246,Lubbock,LBB
+247,Lynchburg,LYH
+248,Macon,MCN
+249,Madison,MSN
+250,Manchester,MHT
+251,Manhattan,MHK
+252,Manistee,MBL
+253,Marion,MWA
+254,Marquette,MQT
+255,Martha's Vineyard,MVY
+256,Mason City,MCW
+257,Massena,MSS
+258,McAllen,MFE
+259,McCook,MCK
+260,Medford,MFR
+261,Melbourne,MLB
+262,Memphis,MEM
+263,Meridian,MEI
+264,Miami,MIA
+265,Midland,MAF
+266,Miles City,MLS
+267,Milwaukee,MKE
+268,Minneapolis,MSP
+269,Minot,MOT
+270,Missoula,MSO
+271,Mobile,MOB
+272,Modesto,MOD
+273,Moline,MLI
+274,Monroe,MLU
+275,Monterey,MRY
+276,Montgomery,MGM
+277,Montrose,MTJ
+278,Morgantown,MGW
+279,Moses Lake,MWH
+280,Muscle Shoals,MSL
+281,Muskegon,MKG
+282,Myrtle Beach,MYR
+283,Nantucket,ACK
+284,Naples,APF
+285,Nashville,BNA
+286,New Bern,EWN
+287,New Haven,HVN
+288,New Orleans,MSY
+289,New York,JFK
+290,New York,LGA
+291,New York,NYC -All
+292,Newark,EWR
+293,Newburgh,SWF
+294,Newport News,PHF
+295,Nome,OME
+296,Norfolk,ORF
+297,North Bend,OTH
+298,North Platte,LBF
+299,Oakland,OAK
+300,Ogdensburg,OGS
+301,Oklahoma City,OKC
+302,Omaha,OMA
+303,Ontario,ONT
+304,Orange County,SNA
+305,Orlando,MCO
+306,Oshkosh,OSH
+307,Owensboro,OWB
+308,Oxnard,OXR
+309,Paducah,PAH
+310,Page,PGA
+311,Palm Springs,PSP
+312,Panama City,PFN
+313,Parkersburg,PKB
+314,Pasco,PSC
+315,Pellston,PLN
+316,Pendleton,PDT
+317,Pensacola,PNS
+318,Peoria,PIA
+319,Philadelphia,PHL
+320,Phoenix,PHX
+321,Pierre,PIR
+322,Pinehurst,SOP
+323,Pittsburgh,PIT
+324,Plattsburgh,PLB
+325,Pocatello,PIH
+326,Ponca City,PNC
+327,Portland,PWM
+328,Portland,PDX
+329,Portsmouth,PSM
+330,Prescott,PRC
+331,Presque Isle,PQI
+332,Providence,PVD
+333,Provincetown,PVC
+334,Pueblo,PUB
+335,Pullman,PUW
+336,Quincy,UIN
+337,Raleigh,RDU
+338,Rapid City,RAP
+339,Redding,RDD
+340,Redmond,RDM
+341,Reno,RNO
+342,Rhinelander,RHI
+343,Richmond,RIC
+344,Riverton,RIW
+345,Roanoke,ROA
+346,Rochester,RST
+347,Rochester,ROC
+348,Rock Springs,RKS
+349,Rockford,RFD
+350,Rockland,RKD
+351,Roswell,ROW
+352,Rutland,RUT
+353,Sacramento,SMF
+354,Saginaw,MBS
+355,Salina,SLN
+356,Salisbury,SBY
+357,Salt Lake City,SLC
+358,San Angelo,SJT
+359,San Antonio,SAT
+360,San Diego,SAN
+361,San Francisco,QSF -All
+362,San Francisco,SFO
+363,San Jose,SJC
+364,San Luis Obispo,SBP
+365,Sand Point,SDP
+366,Santa Barbara,SBA
+367,Santa Fe,SAF
+368,Santa Maria,SMX
+369,Santa Rosa,STS
+370,Saranac Lake,SLK
+371,Sarasota,SRQ
+372,Sault Ste. Marie,CIU
+373,Savannah,SAV
+374,Scottsbluff,BFF
+375,Seattle,SEA
+376,Shenandoah Valley Airport,SHD
+377,Sheridan,SHR
+378,Shreveport,SHV
+379,Sidney,SDY
+380,Silver City,SVC
+381,Sioux City,SUX
+382,Sioux Falls,FSD
+383,Sitka,SIT
+384,Skagway,SGY
+385,South Bend,SBN
+386,Spokane,GEG
+387,Springfield,SPI
+388,Springfield,CEF
+389,Springfield,SGF
+390,Springfield,VSF
+391,St. Cloud,STC
+392,St. George,SGU
+393,St. Louis,STL
+394,St. Petersburg,PIE
+395,State College,SCE
+396,Steamboat Springs,SBS
+397,Sun Valley,SUN
+398,Syracuse,SYR
+399,Tallahassee,TLH
+400,Tampa,TPA
+401,Telluride,TEX
+402,Texarkana,TXK
+403,Thief River Falls,TVF
+404,Toksook Bay,OOK
+405,Toledo,TOL
+406,Topeka,TOP
+407,Traverse City,TVC
+408,Trenton,TTN
+409,Tri-City Airport,TRI
+410,Tucson,TUS
+411,Tulsa,TUL
+412,Tupelo,TUP
+413,Twin Falls,TWF
+414,Tyler,TYR
+415,Unalakleet,UNK
+416,Vail,EGE
+417,Valdez,VDZ
+418,Valdosta,VLD
+419,Victoria,VCT
+420,Visalia,VIS
+421,Waco,ACT
+422,Walla Walla,ALW
+423,Washington DC,DCA
+424,Washington DC,IAD
+425,Washington DC,WAS 
+426,Waterloo,ALO
+427,Watertown,ART
+428,Watertown,ATY
+429,Wausau,CWA
+430,Wenatchee,EAT
+431,West Palm Beach,PBI
+432,West Yellowstone,WYS
+433,White Plains,HPN
+434,Wichita Falls,SPS
+435,Wichita,ICT
+436,Wilkes-Barre,AVP
+437,Williamsport,IPT
+438,Williston,ISN
+439,Wilmington,ILG
+440,Wilmington,ILM
+441,Wolf Point,OLF
+442,Worland,WRL
+443,Wrangell,WRG
+444,Yakima,YKM
+445,Yakutat,YAK
+446,Yuma,YUM

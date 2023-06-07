@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>State Search</title>
+	<style>
+		#results {
+			position: absolute;
+			z-index: -1;
+			visibility: hidden;
+			max-height: 200px;
+			overflow-y: scroll;
+		}
+
+		#results.visible {
+			z-index: 1;
+			visibility: visible;
+		}
+	</style>
+</head>
+<body>
+	<form action="/" method="POST">
+		<label for="state_name">Enter state name:</label>
+		<input type="text" id="state_name" name="state_name" onkeyup="searchStates()" onblur="hideResults()">
+		<select id="result_list" size="5" style="display: none;" onchange="selectResult()">
+		</select>
+	</form>
+	<!-- create a select options tray -->
+	
+	<script>
+		function searchStates() {
+			let input = document.getElementById("state_name");
+			let filter = input.value.toLowerCase();
+
+			// Clear previous results
+			let resultsSelect = document.getElementById("result_list");
+			resultsSelect.innerHTML = "";
+
+			// Call API to get matching results
+			fetch("/search-state/state=" + filter)
+			.then(response => response.json())
+			.then(data => {
+				// Add matching results to the results select
+				for (let i = 0; i < data.length; i++) {
+					let result = data[i];
+					let option = document.createElement("option");
+					option.text = result;
+					resultsSelect.add(option);
+				}
+
+				// Show results select
+				resultsSelect.style.display = "block";
+			});
+		}
+
+		function hideResults() {
+			// Hide results select if user is not in input field
+			let resultsSelect = document.getElementById("result_list");
+			resultsSelect.style.display = "none";
+		}
+
+		function selectResult() {
+			// Do something with the selected result
+			let resultsSelect = document.getElementById("result_list");
+			let selectedOption = resultsSelect.options[resultsSelect.selectedIndex];
+			let selectedValue = selectedOption.value;
+			alert("Selected: " + selectedValue);
+		}
+	</script>
+</body>
+</html>

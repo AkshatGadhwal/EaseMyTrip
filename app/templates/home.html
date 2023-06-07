@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>State Search</title>
+    <link rel="stylesheet" href="/static/home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    {% include 'header.html' %}
+    {% include 'flash_messages.html' %}
+    <h1>
+        Home Page
+    </h1>
+    <div class="container1">
+        <div class="container2">
+            <div class="container cities">
+                <h1>Flight Booking</h1>
+                <form method="POST" id ="flight_book" action="/flight_booking">
+                    <div class="parent">
+                        <div class="city">
+                            <div class="child">
+                                
+                                    <input type="text" placeholder="Enter Source city" id="source_city_name" name="source_city" onclick="search(4)"  onkeyup="search(4)" onblur="hideResults(4)">
+                                    <select name="results" id="source_city_results" class="input-box" onchange="selectResult(4)">
+                                        <option value="">Select a city</option>
+                                    </select>
+                                
+                             </div>
+                            
+                        </div>
+                        <div class="airport">
+                            <div class="child">
+                                
+                                <input type="text" placeholder="Source airport code" id="source_airport_code" name="source_airport" onclick="search(6)"  onkeyup="search(6)" onblur="hideResults(6)">
+                                <select name="results" id="source_airport_results" class="input-box" onchange="selectResult(6)">
+                                    <option value="">Select a airport</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class = "parent">
+                        <div class="city">
+                            <div class="child">
+                               
+                                <input type="text" placeholder="Enter Destination city" id="destination_city_name" name="destination_city" onclick="search(5)"  onkeyup="search(5)" onblur="hideResults(5)">
+                                <select name="results" id="destination_city_results" class="input-box" onchange="selectResult(5)">
+                                    <option value="">Select a city</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+                        <div class="airport">
+                            <div class="child">
+                                
+                                <input type="text" placeholder="destination airport code" id="destination_airport_code" name="destination_airport" onclick="search(7)"  onkeyup="search(7)" onblur="hideResults(7)">
+                                <select name="results" id="destination_airport_results" class="input-box" onchange="selectResult(7)">
+                                    <option value="">Select a airport</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="depdate">
+                        <div class="child">
+                            <label for="depdate">Departure date</label>
+                            <input type="date" value="Departure Date" id="departure_date" name="departure_date"> 
+                        </div>
+                    </div>
+                    <div class="submit"> <button id ="flight_book" type="submit">Book flights</button>
+                    </div>
+                     </form> 
+                     <div class="continer3">
+                        <div>
+                            <h3>
+                                Choose flight from the below options
+                            </h3>
+                            <form method="POST" action="/book_flight">
+                                <label for="flights">Available Flights:</label>
+                                <select id="flights" name="flight_id">
+                                    {% for flight in flights %}
+                                    <option value="{{ flight[0] }}">{{ flight[1] }}, {{flight[2]}}</option>
+                                    {% endfor %}
+                                </select>
+                                <input class="button" type="submit" value="confirm booking">
+                            </form>
+                        </div>
+                    </div>
+            </div>
+            
+        </div>
+        <div class="container hotels">
+            <h1>Hotel Booking</h1>
+            <form method="POST" action="/hotel_booking">
+                <div class="parent">
+                    <div class="city">
+                        <div class="child">
+                            
+                            <input type="text" placeholder="Enter city" id="city_name" name="city" onclick="search(2)"  onkeyup="search(2)" onblur="hideResults(2)">
+                            <select name="results" id="city_results" class="input-box" onchange="selectResult(2)">
+                                <option value="">Select a city</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                    <!-- <div class="hotel">
+                        <div class="child">
+                            <label for="hotel_name">Enter hotel name:</label>
+                            <input type="text" id="hotel_name" name="hotel" onclick="search(8)"  onkeyup="search(8)" onblur="hideResults(8)">
+                        </div>
+                        <div class="child">
+                            <select name="results" id="hotel_results" class="input-box" onchange="selectResult(8)">
+                                <option value="">Select a hotel</option>
+                            </select>
+                        </div>
+                    </div> -->
+                    <button type="submit">Book Hotel</button>
+                </div>
+                
+            </form>
+            <div>
+                <h3>
+                    Choose hotel from the below options
+                </h3>
+                <form method="POST" action="/book_hotel">
+                    <label for="hotels">Available hotels:</label>
+                    <select id="hotels" name="hotel_id">
+                        {% for hotel in hotels %}
+                        <option value="{{ hotel[0] }}">{{ hotel[1] }}, {{hotel[2]}}</option>
+                        {% endfor %}
+                    </select>
+                    <div>
+                        
+                        <div class="child">
+                            <label for="check_in_date">Check in date:</label>
+                            <input type="date" id="check_in_date" name="check_in_date"> 
+                        </div>
+                        <div class="child">
+                            <label for="check_out_date">Check out date:</label>
+                            <input type="date" id="check_out_date" name="check_out_date"> 
+                        </div>
+                    </div>
+                    <input class="button" type="submit" value="Confirm Booking">
+                </form>
+            </div>
+        </div>
+    </div>
+    {% include 'footer.html' %}
+    <script src="/static/home.js"></script>
+</body>
+</html>

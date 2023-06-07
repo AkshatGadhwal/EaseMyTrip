@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>User Profile Page</title>
+	<link rel="stylesheet" type="text/css" href="/static/profile.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+</head>
+
+<body>
+    {% include 'header.html' %}
+    <h1>User Profile</h1>
+	<div>
+
+		<p><strong>User ID:</strong> <span id="user_id">{{user_data[0]}}</span></p>
+		<p><strong>Username:</strong> <span id="username">{{user_data[1]}} </span></p>
+		<p><strong>Email:</strong> <span id="email">{{user_data[2]}}</span></p>
+		
+	</div>
+	<div>
+		<h3>Flight Bookings</h3>
+		<table>
+			<thead>
+			  <tr>
+				<th>flight id</th>
+				<th>source</th>
+				<th>destination</th>
+				<th>departure date</th>
+				<th></th>
+			  </tr>
+			</thead>
+			<tbody>
+				
+			  {% for item in flights %}
+				<tr>
+				  <td name="flight_id">{{ item[0] }}</td>
+				  <td>{{ item[1] }}</td>
+				  <td>{{ item[2] }}</td>
+				  <td>{{ item[3] }}</td>
+				  <td><form method="POST" action="/delete_flight"><input type="hidden" name="flight_id" value="{{item[0]}}"><input class="button"  type="submit" value="Delete Booking"></form></td>
+				</tr>
+			  {% endfor %}
+			
+			</tbody>
+		  </table>
+		
+		
+	</div>
+	<div>
+		<h3>Hotel Bookings</h3>
+		<table>
+			<thead>
+			  <tr>
+				<th>hotel id</th>
+				<th>start date</th>
+				<th>end date</th>
+				<th>name</th>
+				<th>city</th>
+				<th></th>
+			  </tr>
+			</thead>
+			<tbody>
+			  {% for item in hotels %}
+				<tr>
+				  <td >{{ item[0] }}</td>
+				  <td>{{ item[1] }}</td>
+				  <td>{{ item[2] }}</td>
+				  <td>{{ item[3] }}</td>
+				  <td>{{ item[4] }}</td>
+				  <td><form method ="POST" action="/delete_hotel"><input type="hidden" name="hotel_id" value="{{item[0]}}"><input class="button" type="submit" value="Delete Booking"></form></td>
+				</tr>
+			  {% endfor %}
+			</tbody>
+		  </table>
+		  <button>
+			<a href="/update_profile">Edit Profile</a>
+		</button>
+		<!-- <button>
+			<a href="/delete_profile">Delete Account</a>
+		</button> -->
+	</div>
+	{% include 'footer.html' %}
+	<!-- <script type="text/javascript" src="/static/profile.js"></script> -->
+</body>
+
+</html>

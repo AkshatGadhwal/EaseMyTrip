@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="/static/register.css">
+</head>
+<body>
+	<h1> Ease My Trip</h1>
+	<h1>New User Registration</h1>
+	{% include 'flash_messages.html' %}
+	{% if error %}
+		<p class=error><strong>Error:</strong> {{ error }}
+	{% endif %}
+	{% from "_formhelpers.html" import render_field %}
+	<form method=post>
+		<dl>
+			{{ render_field(form.username) }}
+			{{ render_field(form.email) }}
+			{{ render_field(form.password) }}
+			{{ render_field(form.confirm) }}
+		</dl>
+  		<p><input type=submit value=Register>
+	</form>
+	<button class="login">
+		<a href="/login">Go To Login Page</a>
+	</button>
+	{% include 'footer.html' %}
+</body>
+
+</html>

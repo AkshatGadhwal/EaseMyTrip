@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin</title>
+    <link rel="stylesheet" type="text/css" href="/static/profile.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- create a admin page -->
+    {% include 'header.html' %}
+    {% include 'flash_messages.html' %}
+    <h1>
+        Admin Page
+    </h1>
+    <div class="container">
+        <div class="container">
+            <div>
+                {% include 'user_details.html' %}
+            </div>
+        </div class="container">
+        <div class="container">
+            <h2>Create a New User</h2>
+            <div class="container">
+                {% from "_formhelpers.html" import render_field %}
+                <form method=post action="/register_by_admin">
+                    <dl>
+                        {{ render_field(create_user_form.username) }}
+                        {{ render_field(create_user_form.email) }}
+                        {{ render_field(create_user_form.password) }}
+                        {{ render_field(create_user_form.confirm) }}
+                    </dl>
+                    <p><input type=submit value=Create></p>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Update User Details</h2>
+            <div class="container">
+                {% from "_formhelpers.html" import render_field %}
+                <form method=post action="/update_by_admin">
+                    <dl>
+                        {{ render_field(update_user_form.user_id) }}
+                        {{ render_field(update_user_form.username) }}
+                        {{ render_field(update_user_form.email) }}
+                        {{ render_field(update_user_form.password) }}
+                        {{ render_field(update_user_form.confirm) }}
+                    </dl>
+                    <p><input type=submit value=Update></p>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Delete User</h2>
+            <div class="container">
+                {% from "_formhelpers.html" import render_field %}
+                <form method=post action="/delete_by_admin">
+                    <dl>
+                    {{ render_field(delete_user_form.username) }}
+                    </dl>
+                    <p><input type=submit value=Delete></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>

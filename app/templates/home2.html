@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>State Search</title>
+    <link rel="stylesheet" href="/static/home.css">
+</head>
+<body>
+    {% include 'header.html' %}
+    {% include 'flash_messages.html' %}
+    <!-- <form>
+        <div class="parent">
+            <div class="child">
+                <label for="country_name">Enter country name:</label>
+                <input type="text" id="country_name" name="country_name" onkeyup="search(0)" onblur="hideResults(0)">
+            </div>
+            <div class="child">
+                <select name="results" id="country_results" class="input-box" style="display: none; z-index: 2;" onchange="selectResult(0)">
+                    <option value="">Select a country</option>
+                </select>
+            </div>
+        </div>
+    </form> -->
+	<!-- <form>
+        <div style="display: flex;" class="parent">
+            <div style="display: inline-block;" class="child">
+                <label for="state_name">Enter state name:</label>
+                <input type="text" id="state_name"  name="state_name" onclick="search(1)" onkeyup="search(1)" onblur="hideResults(1)">
+            </div>
+            <div style="display: inline-block;" class="child">
+                <select name="results" id="state_results" class="input-box" style="display: none;" onchange="selectResult(1)">
+                    <option value="">Select a state</option>
+                </select>
+            </div>
+        </div>
+	</form>
+    <form>
+        <div class="parent">
+            <div class="child">
+                <label for="city_name">Enter city name:</label>
+                <input type="text" id="city_name" name="city_name" onclick="search(2)"  onkeyup="search(2)" onblur="hideResults(2)">
+            </div>
+            <div class="child">
+                <select name="results" id="city_results" class="input-box" style="display: none;" onchange="selectResult(2)">
+                    <option value="">Select a city</option>
+                </select>
+            </div>
+        </div>
+    </form> -->
+    <h1>
+        Home Page
+    </h1>
+    <form>
+        <div class="parent">
+            <div class="child">
+                <label for="city_name">Enter city name:</label>
+                <input type="text" id="city_name" name="city_name" onclick="search(2)"  onkeyup="search(2)" onblur="hideResults(2)">
+            </div>
+            <div class="child">
+                <select name="results" id="city_results" class="input-box" onchange="selectResult(2)">
+                    <option value="">Select a city</option>
+                </select>
+            </div>
+            <div class="child">
+                <label for="airport_code">Enter airport code:</label>
+                <input type="text" id="airport_code" name="airport_code" onclick="search(3)"  onkeyup="search(3)" onblur="hideResults(3)">
+            </div>
+            <div class="child">
+                <select name="results" id="airport_results" class="input-box" style="display: none;" onchange="selectResult(3)">
+                    <option value="">Select an airport</option>
+                </select>
+        </div>
+    </form>
+    {% include 'footer.html' %}
+    <script type="text/javascript" src="/static/home.js"></script>
+</body>
+</html>
+
+
+<h2>
+    Flight Booking
+</h2>
+<form method="post">
+    <div class="parent">
+        <div class="child">
+            <label for="city_name">Departure city:</label>
+            <input type="text" id="city_name" name="city_name" onclick="search(2)"  onkeyup="search(2)" onblur="hideResults(2)">
+        </div>
+        <div class="child">
+            <select name="results" id="city_results" class="input-box" onchange="selectResult(2)">
+                <option value="">Select a city</option>
+            </select>
+        </div>
+        <div class="child">
+            <label for="departure_date">Departure date</label>
+            <input type="date" id="departure_date" name="departure_date"> 
+        </div>
+    </div>
+    <br>
+    <div class="parent">
+        <div class="child">
+            <label for="city_name">Arrival city:</label>
+            <input type="text" id="city_name" name="city_name" onclick="search(3)"  onkeyup="search(3)" onblur="hideResults(3)">
+        </div>
+        <div class="child">
+            <select name="results" id="city_results" class="input-box" onchange="selectResult(3)">
+                <option value="">Select a city</option>
+            </select>
+        </div>
+    </div>
+    <button type="submit" href="/book_flight">Book</button>
+</form>
+
+<br>
+<br>
+
+<h3>
+    Hotel Booking
+</h3>
+<form method="post">
+    <div class="parent">
+        <div class="child">
+            <label for="city_name">City</label>
+            <input type="text" id="city_name" name="city_name" onclick="search(2)"  onkeyup="search(2)" onblur="hideResults(2)">
+        </div>
+        <div class="child">
+            <select name="results" id="city_results" class="input-box" onchange="selectResult(2)">
+                <option value="">Select a city</option>
+            </select>
+        </div>
+        <div class="child">
+            <label for="checkin_date">Check-in date</label>
+            <input type="date" id="checkin_date" name="checkin_date"> 
+        </div>
+        <div class="child">
+            <label for="checkout_date">Check-out date</label>
+            <input type="date" id="checkout_date" name="checkout_date"> 
+        </div>
+    </div>
+    <button type="submit" href="/book_hotel">Book</button>
+</form>
+{% include 'footer.html' %}
+<script type="text/javascript" src="/static/home.js"></script>
+</body>
