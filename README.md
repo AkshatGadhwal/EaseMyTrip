@@ -1,3 +1,5 @@
+Apologies for the incorrect information. Here's the updated version of the readme.md file with the correct information regarding the database library used:
+
 # EaseMyTrip
 
 EaseMyTrip is a comprehensive web application built using Flask Framework and PostgreSQL database. It provides users with a convenient and user-friendly platform for flight and hotel bookings. This repository contains the source code and files for the EaseMyTrip application.
@@ -12,12 +14,18 @@ EaseMyTrip is a comprehensive web application built using Flask Framework and Po
 - Optimized Performance: Efficient database schema design, query optimization techniques, and indexing to ensure fast and reliable application performance.
 - Responsive Design: The application is designed to be responsive, providing an optimal viewing experience across different devices and screen sizes.
 
+## ER Diagram
+
+- This is ER-Diagram of the database, we have created for this application
+
+![ER Diagram](ER_Diagram.png)
+
 ## Technologies Used
 
 - Flask Framework: A powerful Python web framework used for building the application's backend.
 - PostgreSQL: A robust and scalable open-source relational database management system used for storing and retrieving data.
 - HTML, CSS, JavaScript: Frontend technologies used for designing and enhancing the user interface.
-- SQLAlchemy: A Python SQL toolkit and Object-Relational Mapping (ORM) library used for database interactions.
+- Psycopg2: A PostgreSQL adapter for Python, used for database interactions.
 - Bootstrap: A popular CSS framework used for creating responsive and visually appealing web pages.
 
 ## Getting Started
@@ -27,8 +35,8 @@ To run the EaseMyTrip application locally, follow these steps:
 1. Clone the repository: `git clone https://github.com/AkshatGadhwal/EaseMyTrip.git`
 2. Install the required dependencies: `pip install -r requirements.txt`
 3. Set up the PostgreSQL database and update the database configurations in the `config.py` file.
-4. Run the application: `python app.py`
-5. Access the application in your web browser: `http://localhost:5000`
+4. Start the server: `flask run`
+5. Access the application in your web browser: `http://localhost:5044`
 
 ## Contributions
 
